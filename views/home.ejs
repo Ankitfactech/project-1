@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="\styles.css">
+    <title>Revision</title>
+</head>
+<body>
+    <div class="container">
+        <input type= "file" id= "file-input" accept="image/png, image/jpg, image/jpeg" onchange="preview()" multiple>
+        <label for = "file-input">
+            <i class="fa-solid fa-upload"></i> &nbsp Choose a photo 
+        </label> 
+        <p id="num-of-files"> No files choosen</p>
+        <div id ="image"> </div>
+    </div>
+    <script> let fileinput = document.getElementById("file-input");
+		let imagecontainer = document.getElementById("image");
+		let numoffiles = document.getElementById("num-of-files");
+		
+		function preview(){
+			imagecontainer.innerHTML= "";
+			numoffiles.textContent = `${fileinput.files.length} files selected`;
+		
+			for(i of fileinput.files){
+				let reader = new FileReader();
+				let figure = document.createElement("figure");
+				let figcap =  document.createElement("figcaption");
+			
+			figcap.innerText= i.name;
+			figure.appendChild(figcap);
+			reader.onload=()=>{
+				let img= document.createElement("img");
+				img.setAttribute("src",reader.result);
+				figure.insertBefore(img, figcap);
+			}
+			imagecontainer.appendChild(figure);
+			reader.readAsDataURL(i);
+		}
+		}</script>
+</body>
+</html>

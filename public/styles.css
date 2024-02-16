@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
+}
+body{
+    background-color: rgb(223, 216, 230);
+}
+.container{
+    background-color: blueviolet;
+    width: 55%;
+    min-width: 450px;
+    margin: 50px auto;
+    padding: 50px 20px;
+    border-radius: 7px;
+    box-shadow: 0 20px 35px rgba(red, green, blue, alpha);
+}
+input[type="file"]{
+    display: none;
+}
+label {
+    display: block;
+    position: relative;background-color: rgb(207, 183, 45);
+    color: blueviolet;
+    font-size: 12px;
+    text-align: center;
+    width: 300px;
+    padding: 18px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container p {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    
+}
+#image {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+figure{
+    width: 45%;
+}
+img{
+   width: 100%; 
+}
+figcaption{
+    text-align: center;
+    font-size: 2.4vmin;
+    margin-top: 0.5vmin;
+}
+.container{
+    background-color: blueviolet;
+    width: 55%;
+    min-width: 450px;
+    margin: 50px auto;
+    padding: 50px 20px;
+    border-radius: 7px;
+    box-shadow: 0 20px 35px rgba(red, green, blue, alpha);
+}
+input[type="file"]{
+    display: none;
+}
+label {
+    display: block;
+    position: relative;background-color: rgb(207, 183, 45);
+    color: blueviolet;
+    font-size: 12px;
+    text-align: center;
+    width: 300px;
+    padding: 18px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container p {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    
+}
+#image {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+figure{
+    width: 45%;
+}
+img{
+   width: 100%; 
+}
+figcaption{
+    text-align: center;
+    font-size: 2.4vmin;
+    margin-top: 0.5vmin;
+}
